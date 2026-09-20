@@ -77,7 +77,7 @@
 ### Day 4（A2）
 - 视频：PostgreSQL 是什么、表/行/主键
 - 作业：`week2-postgres`：`docker compose up -d`；`cp .env.example .env`；`alembic upgrade head`；`uvicorn`；`GET /health` 显示 db up
-- 验收：`psql` 里 `\\dt` 看到 `users`/`todos`
+- 验收：`psql` 里 `\dt` 看到 `users`/`todos`
 
 ### Day 5（A2）
 - 视频：SQLAlchemy Session、依赖注入
