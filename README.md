@@ -1,40 +1,46 @@
 # python-backend-lab
 
-后端 Python（FastAPI）+ 数据库（PostgreSQL）+ CI/CD（GitHub Actions）跟练仓库。
+资深前端 → Python 后端 → 全栈 → Agent 专家 的跟练仓库。
 
-配合视频主线：[freeCodeCamp Python API Development（约 19 小时）](https://www.youtube.com/watch?v=0sOvCWFmrtA)
-中文可并行：[黑马 FastAPI 入门到实战](https://www.bilibili.com/video/BV1zV2QBtE39/)
+## 先看这个（详细总路线）
 
-## 怎么用
+**[PATH.md](./PATH.md)** —— 按你的背景写的完整路线：验收标准、周计划、视频、作业、与 [ai-agent-book](https://github.com/bojieli/ai-agent-book) 的衔接。
 
-1. 克隆本仓库
-2. 打开 `COURSE.md` 看整体路线
-3. 从 `week1-fastapi-crud/` 开始动手
-4. 每完成一周，开一个 PR 到 `main`（练 Git + 以后接 CI）
+简版周计划仍见 [COURSE.md](./COURSE.md)。
 
-## 目录
+## 你现在立刻做
 
-| 路径 | 内容 |
-|------|------|
-| `COURSE.md` | 6–8 周学习计划与视频链接 |
-| `week1-fastapi-crud/` | 第 1 周：内存版待办 API |
-| `week2-postgres/` | 第 2–3 周占位（接数据库） |
-| `week3-auth-tests/` | 第 4–5 周占位（JWT + pytest） |
-| `week4-docker-cicd/` | 第 6 周占位（Docker + Actions） |
-| `.github/workflows/ci.yml` | 起步 CI：对 week1 跑测试 |
+1. 打开 `PATH.md` 第 13 节「现在立刻做什么」
+2. 进入 `week1-fastapi-crud/` 按 README 完成 TODO
+3. 开 PR，看 GitHub Actions 是否绿灯
 
-## 本地快速跑第 1 周
+## 本地跑第 1 周
 
 ```bash
-cd week1-fastapi-crud
+git clone https://github.com/xhq52465840/python-backend-lab.git
+cd python-backend-lab/week1-fastapi-crud
 python -m venv .venv
 source .venv/bin/activate   # Windows: .venv\\Scripts\\activate
 pip install -r requirements.txt
 uvicorn app.main:app --reload
 ```
 
-浏览器打开 http://127.0.0.1:8000/docs
+打开 http://127.0.0.1:8000/docs
 
-## 建议节奏
+## 目录
 
-每天 1–2 小时。卡壳了把报错和代码片段发给助手即可。
+| 路径 | 内容 |
+|------|------|
+| `PATH.md` | **详细总路线（主文档）** |
+| `COURSE.md` | 简版周计划与视频链接 |
+| `week1-fastapi-crud/` | 第 1 周：内存版待办 API |
+| `week2-postgres/` | 数据库周占位 |
+| `week3-auth-tests/` | 鉴权与测试占位 |
+| `week4-docker-cicd/` | Docker + CI/CD 占位 |
+| `.github/workflows/ci.yml` | 起步 CI |
+
+## 最终目标对齐
+
+1. 普通 Python 后端工程师（API + Postgres + 测试 + Compose + Actions + 本地部署）
+2. 全栈（前端优势接自己的后端）
+3. 精读并实践 [bojieli/ai-agent-book](https://github.com/bojieli/ai-agent-book)，精通 Agent 工程
