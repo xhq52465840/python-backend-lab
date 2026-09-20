@@ -1,22 +1,24 @@
-# 今日实课 · 2026-09-20（周日开学日）
+# 今日实课 · 2026-09-20（周日）
 
-> 类型：**新课日（默认 Day 01）**  
-> 说明：开学第一天先入学摸底；若摸底不稳可改为 A0 强化。
+> 今日学习目录：`week1-fastapi/day01-get-post/`
 
-## 对照讲义
-- [Day 01 · FastAPI 起步](../curriculum/day-01-fastapi-start.md)
-- 作业目录：`week1-fastapi-crud/`
+## 固定流程
 
-## 最终清单
-1. 视频：FastAPI 环境、第一个路由、`/docs`
-2. 本地跑通 week1：venv、安装依赖、`uvicorn`、打开 `/docs`
-3. 实现 `GET /todos`、`POST /todos`
+`git pull` → 进入 `week1-fastapi/day01-get-post/` → 阅读 `VIDEOS.md` + `NOTES.md` + `README.md` → 完成任务并自测 → `git add` / `git commit` / `git push` → 老师 review 当天 commits。
+
+## 今日清单
+
+1. [ ] `git pull`
+2. [ ] 进入 `week1-fastapi/day01-get-post/`
+3. [ ] 看完 `VIDEOS.md`，读完 `NOTES.md`，再按 `README.md` 操作
+4. [ ] 跑通 FastAPI `/docs`，实现 `GET /todos` 与 `POST /todos`
+5. [ ] 自测：创建后能列表，非法 body 返回 422
+6. [ ] 提交并 push
+7. [ ] 等老师 review commits
 
 ## 验收标准
-- [ ] `/docs` 可交互
-- [ ] POST 创建成功，GET 能列表
-- [ ] 非法 body → 422
-- [ ] 入学摸底 3 题已交卷
 
-## 傍晚
-周日无固定 18:00 routine；学员学完后在对话里交完成度与摸底答案。
+- [ ] `/health` 仍返回 `{"status": "ok"}`
+- [ ] `GET /todos` 返回数组
+- [ ] `POST /todos` 返回 201 并带自增 id
+- [ ] 非法 JSON 或缺少 `title` 返回 422

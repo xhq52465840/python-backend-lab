@@ -1,12 +1,17 @@
 # python-backend-lab
 
-## 学习导航（先看）
+## 新课程流程（按天进入并提交）
 
-- **[PATH.md](./PATH.md)**：总路线，说明学习阶段、目标与出口。
-- **[DAILY_PLAN.md](./DAILY_PLAN.md)**：日计划总表，按天安排学习节奏与任务。
-- **[curriculum/](./curriculum/)**：按天课表，现在就能看，包含每个学习日的目标、清单和验收标准。
-- **[progress/TODAY.md](./progress/TODAY.md)**：当天实课，上午抽查后更新；以这里的最终清单作为当天正式任务。
-- **[curriculum/ACCEPTANCE.md](./curriculum/ACCEPTANCE.md)**：验收说明，解释抽查分流、晚间验收和阶段出口。
+本仓库现在按“周 → 天”组织课程。每天只在对应的 day 文件夹内学习和提交：
+
+1. `git pull`
+2. 打开当天目录，例如 `week1-fastapi/day01-get-post/`
+3. 按顺序阅读 `VIDEOS.md`、`NOTES.md`，再执行 `README.md` 中的任务
+4. 在当天目录修改代码并完成自测
+5. `git add`、`git commit`、`git push`
+6. 老师根据当天提交的 commits review
+
+详细说明见 [LEARNING_FLOW.md](./LEARNING_FLOW.md)，第 1 周课程见 [week1-fastapi/](./week1-fastapi/)，当天指针见 [progress/TODAY.md](./progress/TODAY.md)。
 
 资深前端 → Python 后端 → 全栈 → Agent 专家 的跟练仓库。
 
@@ -20,16 +25,16 @@
 
 ## 你现在立刻做
 
-1. 打开 `PATH.md` 第 13 节「现在立刻做什么」
-2. 进入 `week1-fastapi-crud/` 按 README 完成 TODO
-3. 开 PR，看 GitHub Actions 是否绿灯
+1. 打开 `progress/TODAY.md`，确认当天 day 目录
+2. 进入 `week1-fastapi/day01-get-post/`，按 `VIDEOS.md`、`NOTES.md`、`README.md` 的顺序学习
+3. 完成 TODO 后提交并 push，等待老师 review commits
 4. 按 [DAILY_PLAN.md](./DAILY_PLAN.md) 每天完成 3 小时学习与复盘
 
 ## 本地跑第 1 周
 
 ```bash
 git clone https://github.com/xhq52465840/python-backend-lab.git
-cd python-backend-lab/week1-fastapi-crud
+cd python-backend-lab/week1-fastapi/day01-get-post
 python -m venv .venv
 source .venv/bin/activate   # Windows: .venv\\Scripts\\activate
 pip install -r requirements.txt
@@ -47,7 +52,9 @@ uvicorn app.main:app --reload
 | `COURSE.md` | 简版周计划与视频链接 |
 | `curriculum/` | 按天课表与验收说明 |
 | `progress/TODAY.md` | 抽查后更新的当天实课 |
-| `week1-fastapi-crud/` | 第 1 周：内存版待办 API |
+| `LEARNING_FLOW.md` | 按天学习、提交与 review 的固定流程 |
+| `week1-fastapi/` | 第 1 周：按 day 文件夹组织的 FastAPI 课程 |
+| `week1-fastapi-crud/` | 第 1 周旧目录，保留作参考 |
 | `week2-postgres/` | 第 2 周：完整的 PostgreSQL + SQLAlchemy + Alembic + FastAPI 骨架（不再是占位目录） |
 | `week3-auth-tests/` | 鉴权与测试占位 |
 | `week4-docker-cicd/` | Docker + CI/CD 占位 |
