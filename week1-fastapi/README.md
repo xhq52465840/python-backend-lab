@@ -17,4 +17,4 @@
 | Day02 | `day02-full-crud/` | 完整 CRUD + 404 |
 | Day03 | `day03-tests-pr/` | pytest + 开 PR，本周出口 |
 
-旧目录 `week1-fastapi-crud/` 保留作参考，**从现在起以本目录的 day 文件夹为准**。
+旧目录 `week1-fastapi-crud/` 已移除；从现在起以本目录的 day 文件夹为准。
