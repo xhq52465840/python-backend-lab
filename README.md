@@ -1,5 +1,13 @@
 # python-backend-lab
 
+## 学习导航（先看）
+
+- **[PATH.md](./PATH.md)**：总路线，说明学习阶段、目标与出口。
+- **[DAILY_PLAN.md](./DAILY_PLAN.md)**：日计划总表，按天安排学习节奏与任务。
+- **[curriculum/](./curriculum/)**：按天课表，现在就能看，包含每个学习日的目标、清单和验收标准。
+- **[progress/TODAY.md](./progress/TODAY.md)**：当天实课，上午抽查后更新；以这里的最终清单作为当天正式任务。
+- **[curriculum/ACCEPTANCE.md](./curriculum/ACCEPTANCE.md)**：验收说明，解释抽查分流、晚间验收和阶段出口。
+
 资深前端 → Python 后端 → 全栈 → Agent 专家 的跟练仓库。
 
 ## 先看这个（详细总路线）
@@ -37,6 +45,8 @@ uvicorn app.main:app --reload
 | `PATH.md` | **详细总路线（主文档）** |
 | `DAILY_PLAN.md` | 每天 3 小时的学习计划 |
 | `COURSE.md` | 简版周计划与视频链接 |
+| `curriculum/` | 按天课表与验收说明 |
+| `progress/TODAY.md` | 抽查后更新的当天实课 |
 | `week1-fastapi-crud/` | 第 1 周：内存版待办 API |
 | `week2-postgres/` | 第 2 周：完整的 PostgreSQL + SQLAlchemy + Alembic + FastAPI 骨架（不再是占位目录） |
 | `week3-auth-tests/` | 鉴权与测试占位 |
