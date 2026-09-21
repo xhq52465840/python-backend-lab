@@ -1,24 +1,21 @@
-# 今日实课 · 2026-09-20（周日）
+# 今日实课 · 2026-09-21（周一 · 补课日）
 
-> 今日学习目录：`week1-fastapi/day01-get-post/`
+> 类型：**补交 / 强化 Day01**（不上 Day02）  
+> 目录：`week1-fastapi/day01-get-post/`
 
-## 固定流程
+## 原因
+学员反馈昨天未完成 Day01；今日先还债，再谈新课。
 
-`git pull` → 进入 `week1-fastapi/day01-get-post/` → 阅读 `VIDEOS.md` + `NOTES.md` + `README.md` → 完成任务并自测 → `git add` / `git commit` / `git push` → 老师 review 当天 commits。
-
-## 今日清单
-
+## 清单
 1. [ ] `git pull`
-2. [ ] 进入 `week1-fastapi/day01-get-post/`
-3. [ ] 看完 `VIDEOS.md`，读完 `NOTES.md`，再按 `README.md` 操作
-4. [ ] 跑通 FastAPI `/docs`，实现 `GET /todos` 与 `POST /todos`
-5. [ ] 自测：创建后能列表，非法 body 返回 422
-6. [ ] 提交并 push
-7. [ ] 等老师 review commits
+2. [ ] 读 `NOTES.md` + 官方文档（见 `VIDEOS.md` 必读；视频可选）
+3. [ ] 实现 `GET /todos`、`POST /todos`
+4. [ ] 自测：POST→GET；缺 title → 422
+5. [ ] push 分支 `study/week1-day01`
+6. [ ] 老师 review；可补答上午抽查题
 
-## 验收标准
-
-- [ ] `/health` 仍返回 `{"status": "ok"}`
-- [ ] `GET /todos` 返回数组
-- [ ] `POST /todos` 返回 201 并带自增 id
-- [ ] 非法 JSON 或缺少 `title` 返回 422
+## 验收
+- `/health` ok
+- GET 返回数组；POST 201 + 自增 id
+- 非法 body → 422
+- GitHub 能看到当日提交
