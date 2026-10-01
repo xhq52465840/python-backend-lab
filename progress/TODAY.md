@@ -1,10 +1,10 @@
-# 今日实课 · 2026-09-30（周三 · 继续补课）
+# 今日实课 · 2026-10-01（周四 · 继续补课）
 
 > 类型：**补交 / 强化 Day01**（不上 Day02）  
 > 目录：`week1-fastapi/day01-get-post/`
 
 ## 原因
-截至今天上午：GitHub 仍只有 `main`，无 `study/week1-day01`；9/21–29 仅 chore 更新了 `progress/TODAY.md`（周末未催），Day01 代码与清单仍未交付。继续还债，稳住再开新课。
+截至今天上午：GitHub 仍只有 `main`，无 `study/week1-day01`；9/21–30 仅 chore 更新了 `progress/TODAY.md`（周末未催），Day01 代码与清单仍未交付。继续还债，稳住再开新课。
 
 ## 清单
 1. [ ] `git pull`
